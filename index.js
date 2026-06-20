@@ -45,7 +45,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
 		const headerInput = new TextInputBuilder()
 			.setCustomId('header')
 			.setStyle(TextInputStyle.Short)
-			.setPlaceholder('e.g. Wordle 1984 4/6, Wordle 1 1/6*')
+			.setPlaceholder('e.g.: Wordle 1984 4/6, Wordle 1 1/6*')
 			.setRequired(true);
 
 		const headerLabel = new LabelBuilder()
@@ -58,7 +58,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
 			.setCustomId('grid')
 			.setStyle(TextInputStyle.Paragraph)
 			.setPlaceholder(
-				'🟨🟨🟨🟨🟨\n⬛🟩⬛🟩⬛\n🟩🟩🟩🟩🟩\n🟩🟩🟩🟩🟩\n⬛🟩🟩🟩⬛\n⬛⬛🟩⬛⬛',
+				'e.g.:\n🟨🟨🟨🟨🟨\n⬛🟩⬛🟩⬛\n🟩🟩🟩🟩🟩\n🟩🟩🟩🟩🟩\n⬛🟩🟩🟩⬛\n⬛⬛🟩⬛⬛',
 			)
 			.setRequired(true);
 
