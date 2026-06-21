@@ -22,7 +22,7 @@ client.once(Events.ClientReady, async (readyClient) => {
 		await client.application.commands.create(
 			new SlashCommandBuilder()
 				.setName('share')
-				.setDescription('fake wordle.')
+				.setDescription('fake wordle. https://github.com/limesdotpink/totally-real-wordle')
 				.setContexts([0, 1, 2]),
 		);
 
